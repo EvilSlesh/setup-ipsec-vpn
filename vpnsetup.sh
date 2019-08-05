@@ -28,9 +28,6 @@ YOUR_IPSEC_PSK=''
 YOUR_USERNAME=''
 YOUR_PASSWORD=''
 
-# Important notes:   https://git.io/vpnnotes
-# Setup VPN clients: https://git.io/vpnclients
-
 # =====================================================
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
@@ -208,8 +205,8 @@ L2TP_LOCAL=${VPN_L2TP_LOCAL:-'192.168.42.1'}
 L2TP_POOL=${VPN_L2TP_POOL:-'192.168.42.10-192.168.42.250'}
 XAUTH_NET=${VPN_XAUTH_NET:-'192.168.43.0/24'}
 XAUTH_POOL=${VPN_XAUTH_POOL:-'192.168.43.10-192.168.43.250'}
-DNS_SRV1=${VPN_DNS_SRV1:-'8.8.8.8'}
-DNS_SRV2=${VPN_DNS_SRV2:-'8.8.4.4'}
+DNS_SRV1=${VPN_DNS_SRV1:-'176.103.130.130'}
+DNS_SRV2=${VPN_DNS_SRV2:-'176.103.130.131'}
 DNS_SRVS="\"$DNS_SRV1 $DNS_SRV2\""
 [ -n "$VPN_DNS_SRV1" ] && [ -z "$VPN_DNS_SRV2" ] && DNS_SRVS="$DNS_SRV1"
 
@@ -506,9 +503,6 @@ Username: $VPN_USER
 Password: $VPN_PASSWORD
 
 Write these down. You'll need them to connect!
-
-Important notes:   https://git.io/vpnnotes
-Setup VPN clients: https://git.io/vpnclients
 
 ================================================
 
